@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 3</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+</head>
+
+<body>
+
+  <form name="mainFrom" onsubmit="return false">
+
+    <fieldset id="custInfo">
+      <legend>Customer Information</legend>
+
+      <label for="custname"> Name:</label>
+      <input name="custname" id="custname" placeholder="first and last name" type="text" />
+
+      <label for="city">City:</label>
+      <!--<input name="city" id="city" value="Bellevue" type="text" /> -->
+      <select name="cityList" id="cityList" size="1">
+      </select>
+
+      <label for="paymentpref">Payment Preference</label>
+      <select name="paymentpref" id="paymentpref" size="1">
+        <option value="Cash" selected="selected"> Cash</option>
+        <option value="Visa or MasterCard"> Visa or MasterCard</option>
+        <option value="Debit Card"> Debit Card</option>
+      </select>
+
+      <input type="submit" value="Submit" onclick="formSubmitEvent()">
+
+    </fieldset>
+
+    <fieldset id="customerList">
+      <h3>My Customers</h3>
+      <ul id="list"></ul>
+
+    </fieldset>
+
+  </form>
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
